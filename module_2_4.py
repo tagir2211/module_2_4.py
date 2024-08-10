@@ -4,7 +4,7 @@ not_prime = []
 for i in range(len(numbers)):
     if numbers[i] == 1 or numbers[i] == 0:
         continue
-    for j in range(2, len(numbers)+1):
+    for j in range(2, int(numbers[i])+1):
         if numbers[i] % j == 0:
             if j != numbers[i]:
                 not_prime.append(numbers[i])
